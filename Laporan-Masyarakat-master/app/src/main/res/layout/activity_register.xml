@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityRegister"
+    android:orientation="vertical"
+    android:background="@drawable/bgandroidungu">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="362dp"
+        android:layout_height="79dp"
+        android:layout_margin="20sp"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        style="@style/TextAppearance.AppCompat.Headline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20sp"
+        android:text="Register User"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/userId"
+        tools:layout_editor_absoluteX="20dp" />
+
+    <EditText
+        android:id="@+id/userId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20sp"
+        android:hint="Enter UserId"
+        android:minHeight="48dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/password"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20sp"
+        android:hint="Enter Password"
+        android:textStyle="bold"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/name"
+        tools:layout_editor_absoluteX="20dp" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20sp"
+        android:hint="Enter Name"
+        android:textStyle="bold"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/register"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20sp"
+        android:text="Register"
+        android:id="@+id/register"
+        android:background="@android:color/white"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="357dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20sp"
+        android:text="Login"
+        android:background="@android:color/white"
+        android:id="@+id/login"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="357dp" />
+
+</LinearLayout>
